@@ -1,0 +1,325 @@
+﻿<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Assessment 3</title>
+	<script>
+		//Task 4: javascript code for task 4 below
+				/* if the frog button is clicked then display the frog messages and image */
+				function frogButtonClick(){  
+						document.getElementById("displayField").value ="User clicks Frog"; 
+						displayField.style.visibility = "visible";
+						document.getElementById("displayText").innerHTML="Frog is clicked";
+						document.getElementById("displayImage").src="frog.png";
+						displayImage.style.visibility = "visible"; 
+						}   
+				/* if the dog button is clicked then display the dog messages and image */
+				function dogButtonClick(){  
+						document.getElementById("displayField").value ="User clicks Dog"; 
+						displayField.style.visibility = "visible";
+						document.getElementById("displayText").innerHTML="Dog is clicked";
+						document.getElementById("displayImage").src="dog.png";
+						displayImage.style.visibility = "visible"; 
+						}   
+
+				/* if the cat button is clicked then display the cat messages and image */
+				function catButtonClick(){  
+						document.getElementById("displayField").value ="User clicks Cat"; 
+						displayField.style.visibility = "visible";
+						document.getElementById("displayText").innerHTML="Cat is clicked";
+						document.getElementById("displayImage").src="cat.png";
+						displayImage.style.visibility = "visible"; 
+						}   
+    </script>
+	
+	<style> 
+		/* heading styles */
+		h1 {
+			color: navy;
+			margin-top: 70px}
+			
+		h2 {
+			color: navy;
+			margin-top: 20px}
+
+		h3 {
+			color: black;
+			margin-top: 10px}
+			
+		.h11 {
+			margin-top: 50px;
+			color: red; 
+			text-align:center;
+			font-size: 50px}
+		
+		/* css styles for Task 1 including borders, background colour, padding, alignment, font size, font colour, and width	*/
+		.taskOne {
+			border-style: groove;
+			border-color: red;
+			border-width: 10px;
+			background-color: rgb(162, 237, 239);
+			color: black; 
+			text-align:left;
+			padding: 10px;
+			font-size: 20px;
+		  	max-width: 300px;}
+			
+		/* css styles for tables used in task 2 and task 3 */
+		table {
+  			font-family: papyrus, fantasy;
+  			border-collapse: collapse;
+  			max-width: 800px;
+			margin-left:20px;
+			text-align: left;
+			border: 1px dashed #050404;}
+
+		/* css styles for table headers used in task 2 and task 3 */
+		th {
+			border: 1px dashed #050404;
+			background-color: #0a013d;
+			color: white;
+			font: bold;
+			padding: 5px;}
+
+		/* css styles for table columns used in task 2 and task 3 */
+		td {
+			border: 1px dashed #050404;
+			padding: 5px;}
+
+		/* css style used to create alternate row formating in the tables used in task 2 and task 3 */
+		tr:nth-child(even) {
+			background-color: #9aeabe;
+			border: 1px dashed #050404;}
+
+		/* style for fruit images in task 3 */    
+		.imageFruit {
+			height: 350px;
+			width: 350px;}
+		/* style for animal images in task 4 */    
+		.imageAnimal {
+			height: 350px;
+			width: 350px;
+			/* initially hide this image */
+			visibility:hidden;}	
+		.input {
+			/* initially hide this field */
+			visibility:hidden;}
+</style>
+	
+</head>
+
+<body>
+	<!-- display heading for page-->
+    <h1 class="h11">Assessment 3</h1>
+	<!-- horizontal line to separate each question -->
+	<hr />	
+	<!-- clearly labelled question heading-->		
+	<h1> Task 1 </h1>
+    <!-- html code for task 1 below
+		for the entire html container apply the ccs style for a class of taskOne 
+		also format each 'label' field using the ccs style for h3 -->
+	<div class="taskOne"> 
+		<p><h3>Student Number: </h3>A00075286</p>
+		<p><h3>Name: </h3>Sean Hamilton</p>
+		<p><h3>Subject Code: </h3>COMP804</p>
+		<p><h3>Subject Title: </h3>Web Security</p>
+		<p><h3>Assessment 3 Due: </h3>6<sup>th</sup> March 2023</p>
+	</div>
+	<!-- horizontal line to separate each question -->
+	<hr />
+	<!-- clearly labelled question heading-->			
+	<h1> Task 2 </h1>
+	<!-- html code for task 2 below 
+		use CSS to display a similar table to the one showing in the assessment information that :
+		- contains the first 5 rows only
+		- uses different color schemes (text colour, background colour)
+		- uses different border style
+		- uses different font style
+		- uses different font color -->
+	<table>
+	<tr>
+		<th>Activity</th>
+		<th>Date</th>
+	</tr>
+	<tr>
+		<td>First day to enrol for re-enrolling (continuing students)</td>
+		<td>21 Nov 2022</td>
+	</tr>
+	<tr>
+		<td>Orientation</td>
+		<td>20 Feb - 23 Feb 2023<br><br>
+
+			Further information is available on <br>
+			<a href="https://www.uow.edu.au/student/get-started/orientation/" target="_blank">Get Started</a>
+		</td>
+	</tr>
+	<tr>
+		<td>Lectures Commence (weeks 1-6)</td>
+		<td>27 Feb - 07 Apr 2023</td>
+	</tr>
+	<tr>
+		<td>Last day to enrol / add subjects yourself</td>
+		<td>10 Mar 2023</td>
+	</tr>
+	<tr>
+		<td>Last day to enrol with Head of Students approval</td>
+		<td>17 Mar 2023</td>
+	</tr>
+	</table>
+	<!-- horizontal line to separate each question -->
+	<hr />
+	<!-- clearly labelled question heading-->		
+	<h1> Task 3 </h1>
+	<!-- html code for task 3 below 
+		Display a table with information about 10 kinds of fruits with the following:
+		- The code must use HTML and some CSS of your choice. 
+		- The table must have 2 columns with headings: Name, Health benefit.
+		- The table must have 10 rows of data and 1 header row.
+		- On each row the 1st column contains the fruit name, underneath the name display an image of the fruit and 
+		- the 2nd column contains: health benefits of the fruit, underneath that display a link to a webpage that contains information about this fruit
+		- reference to the source of the information -->
+	<table>
+		<thead>
+		  <tr>
+			<th>Name</th>
+			<th>Health Benefits</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+			<td>
+			  <h2>Apple</h2>
+			  <img class="imageFruit" src="https://images.everydayhealth.com/images/impressive-health-benefits-of-apples-1440x810.jpg" alt="Apple">
+			</td>
+			<td>
+			  Reduces risk of diabetes<br>
+			  <a href="https://www.healthline.com/nutrition/10-health-benefits-of-apples" target="_blank">Source</a>
+			</td>
+		  </tr>
+		  <tr>
+			<td>
+			  <h2>Avocado</h2>
+			  <img class="imageFruit" src="https://images.immediate.co.uk/production/volatile/sites/30/2022/07/Avocado-sliced-in-half-ca9d808.jpg" alt="Avocado">
+			</td>
+			<td>
+			  Helps to regulate appetite<br>
+			  <a href="https://www.bbcgoodfood.com/howto/guide/health-benefits-avocado" target="_blank">Source</a>
+			</td>
+		  </tr>		   
+		  <tr>
+			<td>
+			  <h2>Banana</h2>
+			  <img class="imageFruit" src="https://images.immediate.co.uk/production/volatile/sites/30/2017/01/Bunch-of-bananas-67e91d5.jpg" alt="Banana">
+			</td>
+			<td>
+			  Helps with digestion<br>
+			  <a href="https://www.healthline.com/nutrition/11-proven-benefits-of-bananas" target="_blank">Source</a>
+			</td>
+		  </tr>
+		  <tr>
+			<td>
+			  <h2>Blueberry</h2>
+			  <img class="imageFruit" src="https://images.immediate.co.uk/production/volatile/sites/30/2017/01/Blueberries-in-a-bowl-ffafdbe.jpg" alt="Blueberry">
+			</td>
+			<td>
+			  Improves brain function<br>
+			  <a href="https://www.healthline.com/nutrition/10-proven-benefits-of-blueberries" target="_blank">Source</a>
+			</td>
+		  </tr>
+		  <tr>
+			<td>
+			  <h2>Grapes</h2>
+			  <img class="imageFruit" src="https://cdn2.nogarlicnoonions.com/images/thumbs/image.php?width=2000&height=2000&image=/images/articles/2019-01/grapes2019-01-11-12-57-30.jpg" alt="Grapes">
+			</td>
+			<td>
+			  Aids heart health<br>
+			  <a href="https://www.healthline.com/nutrition/benefits-of-grapes" target="_blank">Source</a>
+			</td>
+		  </tr>
+		  <tr>
+			<td>
+			  <h2>Grapefruit</h2>
+			  <img class="imageFruit" src="https://images.immediate.co.uk/production/volatile/sites/30/2017/08/Fresh-grapefuit-9fb18b1.jpg" alt="Grapefruit">
+			</td>
+			<td>
+			  Aids in weight loss<br>
+			  <a href="https://www.healthline.com/nutrition/grapefruit-and-weight-loss" target="_blank">Source</a>
+			</td>
+		  </tr>
+		  <tr>
+			<td>
+			  <h2>Mango</h2>
+			  <img class="imageFruit" src="https://images.immediate.co.uk/production/volatile/sites/30/2018/08/mango-fee0d79-e1648560084294.jpg" alt="Mango">
+			</td>
+			<td>
+			  Helps maintain healthy skin and hair<br>
+			  <a href="https://www.bbcgoodfood.com/howto/guide/health-benefits-mango" target="_blank">Source</a>
+			</td>
+		  </tr>		  
+		  <tr>
+			<td>
+			  <h2>Oranges</h2>
+			  <img class="imageFruit" src="https://images.immediate.co.uk/production/volatile/sites/30/2017/06/oranges-85fb2b6.jpg" alt="Oranges">
+			</td>
+			<td>
+			  Good source of protective antioxidants<br>
+			  <a href="https://www.bbcgoodfood.com/howto/guide/health-benefits-oranges" target="_blank">Source</a>
+			</td>
+		  </tr>		  
+		  <tr>
+			<td>
+			  <h2>Pineapple</h2>
+			  <img class="imageFruit" src="https://images.immediate.co.uk/production/volatile/sites/30/2017/07/pineapple-6ee23f3.jpg" alt="Pineapple">
+			</td>
+		
+			<td>
+			  Aids digestion<br>
+			  <a href="https://www.bbcgoodfood.com/howto/guide/health-benefits-pineapple" target="_blank">Source</a>
+			</td>
+		  </tr>		  
+		  <tr>
+			<td>
+			  <h2>Strawberries</h2>
+			  <img class="imageFruit" src="https://images.immediate.co.uk/production/volatile/sites/30/2013/06/Strawberries-in-a-bowl-e53b458-scaled.jpg" alt="Strawberries">
+			</td>
+			<td>
+			  May support heart health<br>
+			  <a href="https://www.bbcgoodfood.com/howto/guide/ingredient-focus-strawberries" target="_blank">Source</a>
+			</td>
+		  </tr>		  
+		</tbody>
+	  </table>
+	<!-- horizontal line to separate each question -->
+	<hr />
+	<!-- clearly labelled question heading-->			
+	<h1> Task 4 </h1>
+	<!-- html code for task 4 below 
+		Display 3 buttons “Cat”, “Dog” and “Frog” on one line.
+		Display a text field on the next line.
+		Whenever the user clicks the “Cat” button, 3 things will happen at the same time: 
+		- The text field will display “User clicks Cat”;
+		- Under the text field display the message “Cat is clicked”;
+		- Under the message, a picture of a cat is displayed.
+		The other buttons should work in a similar manner -->
+
+	<!-- Display the cat button and call the catButtonClick function -->
+	<button onClick="catButtonClick();"> 
+		Cat 
+	</button> 
+
+	<!-- Display the dog button and call the dogButtonClick function -->
+	<button onClick="dogButtonClick();"> 
+		Dog
+	</button> 
+
+	<!-- Display the frog button and call the frogButtonClick function -->	
+	<button onClick="frogButtonClick();"> 
+		Frog 
+	</button> 	
+
+	<p>
+		<input id="displayField" class="input">
+		<h3 id="displayText"></h3>
+		<img id="displayImage" class="imageAnimal">
+	</p>
+</body>
+</html>
